@@ -1,0 +1,16 @@
+#:kivy 1.0.9
+
+<DragBlock>:
+	size: 50, 50
+	canvas:
+		Rectangle:
+			pos: self.xposition, self.yposition
+			size: self.size
+
+<DragGame>:
+	block: dragblock
+
+	DragBlock:
+		id: dragblock
+		x: root.width/2
+		y: root.height/2
